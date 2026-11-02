@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jelajah Dunia</title>
+
+    <!-- Task 1: Favicon -->
+    <link rel="icon" href="https://edube.org/uploads/media/default/0001/04/logo.jpg">
+
+    <!-- Task 2: Menghubungkan JavaScript -->
+    <script src="script.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #eaf4f8;
+            color: #234;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #176b87;
+        }
+
+        button {
+            background-color: #176b87;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #064663;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #hasil {
+            margin: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jelajah Dunia 🌍</h1>
+
+    <p>
+        Klik tombol di bawah untuk mengetahui benua tempat
+        kamu berada dan beberapa kenampakan geografis terkenal.
+    </p>
+
+    <!-- Task 4: Tombol informasi lokasi -->
+    <button onclick="tampilkanLokasi()">
+        Tampilkan Lokasi Saya
+    </button>
+
+    <p id="hasil" aria-live="polite"></p>
+
+    <h2>Peta Benua di Dunia</h2>
+
+    <img
+        src="https://edube.org/uploads/media/default/0001/04/continents.jpg"
+        usemap="#image-map"
+        alt="Peta dunia yang menunjukkan berbagai benua"
+    >
+
+    <!-- Task 5: Area peta interaktif -->
+    <map name="image-map">
+
+        <area shape="rect"
+              coords="0,0,200,150"
+              href="#amerika-utara"
+              alt="Amerika Utara"
+              title="Amerika Utara">
+
+        <area shape="rect"
+              coords="200,0,400,150"
+              href="#eropa"
+              alt="Eropa"
+              title="Eropa">
+
+        <area shape="rect"
+              coords="400,0,600,150"
+              href="#asia"
+              alt="Asia"
+              title="Asia">
+
+        <area shape="rect"
+              coords="0,150,200,300"
+              href="#amerika-selatan"
+              alt="Amerika Selatan"
+              title="Amerika Selatan">
+
+        <area shape="rect"
+              coords="200,150,400,300"
+              href="#afrika"
+              alt="Afrika"
+              title="Afrika">
+
+        <area shape="rect"
+              coords="400,150,600,300"
+              href="#australia"
+              alt="Australia"
+              title="Australia">
+
+    </map>
+
+    <h2 id="amerika-utara">Amerika Utara</h2>
+    <p>Terkenal dengan Pegunungan Rocky dan Grand Canyon.</p>
+
+    <h2 id="amerika-selatan">Amerika Selatan</h2>
+    <p>Memiliki Hutan Amazon dan Pegunungan Andes.</p>
+
+    <h2 id="eropa">Eropa</h2>
+    <p>Terkenal dengan Pegunungan Alpen dan Menara Eiffel.</p>
+
+    <h2 id="afrika">Afrika</h2>
+    <p>Memiliki Gurun Sahara dan Gunung Kilimanjaro.</p>
+
+    <h2 id="asia">Asia</h2>
+    <p>Memiliki Gunung Everest dan Pegunungan Himalaya.</p>
+
+    <h2 id="australia">Australia</h2>
+    <p>Terkenal dengan Great Barrier Reef dan Gurun Pedalaman.</p>
+
+</body>
+</html>
+```
